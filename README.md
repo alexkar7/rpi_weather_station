@@ -10,6 +10,20 @@ The execution of this app is done every 5 minutes via crontab.
 
 All the data are sent to Carriots IoT cloud platform.
 
+The project is structured into the next modules:
+
+    - managers:
+    
+        - This is the main module.
+        
+    - sensors:
+    
+        - 
+    
+    - carriots:
+    
+        - 
+
 # Environment variables
 
     DHT11_GPIO_PIN

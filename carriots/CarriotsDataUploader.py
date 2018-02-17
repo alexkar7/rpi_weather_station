@@ -20,6 +20,17 @@ CARRIOTS_API_DEVICE = "CARRIOTS_API_DEVICE"
 class CarriotsDataUploader(object):
 
     # *** API *** #
+    def upload_data(self,
+                    humidity,
+                    temperature):
+
+        data = dict(
+            humidity=humidity,
+            temperature=temperature
+        )
+
+        self._upload_data(data)
+
     def upload_humidity_data(self,
                              humidity):
 
