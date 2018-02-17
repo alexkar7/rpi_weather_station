@@ -79,9 +79,9 @@ class CarriotsDataUploader(object):
             header
         )
 
-        f = urllib.request.urlopen(req)
+        res = urllib.request.urlopen(req)
 
-        return json.loads(f.read().decode("utf-8"))
+        return res
 
     def _get_carriots_api_url(self):
 
