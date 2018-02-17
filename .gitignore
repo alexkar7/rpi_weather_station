@@ -99,3 +99,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+.idea/PRACTICAL_IoT_WITH_RPI-MIRIADAX.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml

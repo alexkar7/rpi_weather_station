@@ -3,26 +3,34 @@ A simple Raspberry PI weather station written in Python. This is the final proje
 
 This basic weather station is able to get next information:
 
-    - Temperature (using DHT11 sensor)
-    - Humidity (using DHT11)
-    
-The execution of this app is done every 5 minutes via crontab.
-
+    - Temperature (DHT11 sensor)
+    - Humidity (DHT11)
+   
 All the data are sent to Carriots IoT cloud platform.
 
 The project is structured into the next modules:
 
     - managers:
     
-        - This is the main module.
+        - Main module.
+        - The module gets data from sensors and upload it to Carriots cloud.
         
     - sensors:
     
-        - 
+        - This module gets information for temperature and humidity.
+        - Supported physical sensors are:
+        
+            - DHT11
     
     - carriots:
     
-        - 
+        - Uploads information to Carriots platform.
+        
+The execution of this app is done every 10 minutes via crontab:
+
+    $> crontab -l
+    # m h  dom mon dow   command
+    */10 * * * * /usr/bin/python3 $PATH_TO_SCRIPT/start.py
 
 # Environment variables
 
