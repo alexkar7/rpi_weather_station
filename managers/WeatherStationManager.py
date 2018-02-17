@@ -18,9 +18,3 @@ class WeatherStationManager(object):
 
         carriots_temperature_response = carriots_data_uploader.upload_temperature_data(temperature)
         carriots_humidity_response = carriots_data_uploader.upload_humidity_data(humidity)
-
-    def get_temperature(self):
-        return self.humidity_sensor.get_humidity()
-
-    def get_humidity(self):
-        return self.temperature_sensor.get_temperature()
