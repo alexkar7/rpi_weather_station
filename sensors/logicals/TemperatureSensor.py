@@ -1,5 +1,5 @@
 """
-A class to get current temperature. By default we use DHT11 sensor
+TemperatureSensor class gets current humidity information using DHT11 sensor
 """
 
 # *** IMPORTS *** #

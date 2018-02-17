@@ -1,5 +1,5 @@
 """
-Class able to get temperature and humidity values from DHT11 sensor device
+DHT11 class gets current temperature and humidity values from DHT11 sensor device
 """
 
 # *** IMPORTS *** #

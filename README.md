@@ -8,19 +8,23 @@ This basic weather station is able to get next information:
     
 The execution of this app is done every 5 minutes via crontab.
 
-All the measurements are sent to Carriots's IoT cloud platform.
+All the data are sent to Carriots IoT cloud platform.
 
 # Environment variables
 
     DHT11_GPIO_PIN
+    CARRIOTS_API_URL
     CARRIOTS_API_KEY
+    CARRIOTS_API_DEVICE
 
 # How to use:
     
     1). Set environment variables:
     
-        DHT11_GPIO_PIN = 4
-        CARRIOTS_API_KEY = "This is a private value"
+        export DHT11_GPIO_PIN=4
+        export CARRIOTS_API_URL="http://api.carriots.com/streams"
+        export CARRIOTS_API_KEY="This is a private value, set yours"
+        export CARRIOTS_API_DEVICE="rpi1@alexkar7.alexkar7"
      
     2). Execute start.py file:
     
