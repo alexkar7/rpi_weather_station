@@ -76,7 +76,7 @@ class CarriotsDataUploader(object):
 
         try:
 
-            carriots_api_url = int(os.environ[CARRIOTS_API_URL])
+            carriots_api_url = os.environ[CARRIOTS_API_URL]
 
             return carriots_api_url
 
@@ -88,7 +88,7 @@ class CarriotsDataUploader(object):
 
         try:
 
-            carriots_api_key = int(os.environ[CARRIOTS_API_KEY])
+            carriots_api_key = os.environ[CARRIOTS_API_KEY]
 
             return carriots_api_key
 
@@ -101,7 +101,7 @@ class CarriotsDataUploader(object):
 
         try:
 
-            carriots_api_device = int(os.environ[CARRIOTS_API_DEVICE])
+            carriots_api_device = os.environ[CARRIOTS_API_DEVICE]
 
             return carriots_api_device
 
