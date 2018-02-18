@@ -20,7 +20,7 @@ class WeatherStationManager(object):
             temperature=temperature,
             humidity=humidity)
 
-        print("Temperature = " + temperature)
-        print("Humidity = " + humidity)
+        print("Temperature = " + str(temperature))
+        print("Humidity = " + str(humidity))
 
         return carriots_response
