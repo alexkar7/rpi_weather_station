@@ -26,32 +26,50 @@ The project is structured into the next modules:
     
         - Uploads information to Carriots platform.
         
-The execution of this app is done every 10 minutes via crontab:
-
-    $> crontab -l
-    # m h  dom mon dow   command
-    */10 * * * * /usr/bin/python3 $PATH_TO_SCRIPT/start.py
-
 # Environment variables
 
-    DHT11_GPIO_PIN
-    CARRIOTS_API_URL
-    CARRIOTS_API_KEY
-    CARRIOTS_API_DEVICE
+    -----------------------------------------
+    | NAME                        DATA TYPE |
+    -----------------------------------------
+    | DHT11_GPIO_PIN              INTEGER   |
+    | CARRIOTS_API_URL            STRING    |
+    | CARRIOTS_API_KEY            STRING    |
+    | CARRIOTS_API_DEVICE         STRING    |
+    -----------------------------------------
 
 # How to use:
     
     1). Set environment variables:
-    
-        export DHT11_GPIO_PIN=4
-        export CARRIOTS_API_URL="http://api.carriots.com/streams"
-        export CARRIOTS_API_KEY="This is a private value, set yours"
-        export CARRIOTS_API_DEVICE="rpi1@alexkar7.alexkar7"
+   
+        export DHT11_GPIO_PIN=...
+        export CARRIOTS_API_URL=...
+        export CARRIOTS_API_KEY=...
+        export CARRIOTS_API_DEVICE=...
      
     2). Execute start.py file:
     
         $ python3 start.py
+        
+# Automatic execution (every 10 minutes):
 
+    - Create a script like this:
+    
+        - NOTE: Set correctly your own paths and environment variables
+    
+        # Environment variables
+        export DHT11_GPIO_PIN=...
+        export CARRIOTS_API_URL=...
+        export CARRIOTS_API_KEY=...
+        export CARRIOTS_API_DEVICE=...
+          
+        # Start weather station
+        /usr/bin/python3 $PATH_TO_SCRIPT/rpi_weather_station/start.py
+            
+    - Set crontab execution:
+     
+        $> crontab -l | grep -i weather_station
+        */10 * * * * $PATH_TO_SCRIPT/rpi_weather_station.sh
+   
 # Dependencies
 
     # Adafruit Python DHT Sensor Library
