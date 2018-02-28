@@ -37,7 +37,7 @@ The project is structured into the next modules:
     | CARRIOTS_API_DEVICE         STRING    |
     -----------------------------------------
 
-# How to use:
+# How to use
     
     1). Set environment variables:
    
@@ -50,7 +50,7 @@ The project is structured into the next modules:
     
         $ python3 start.py
         
-# Automatic execution (every 10 minutes):
+# Automatic execution (every 10 minutes)
 
     - Create a script like this:
     
