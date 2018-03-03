@@ -3,8 +3,8 @@ A simple Raspberry PI weather station written in Python. This is the final proje
 
 This basic weather station is able to get next information:
 
-    - Temperature (DHT11 sensor)
-    - Humidity (DHT11)
+    - Temperature (DHT11 and DHT22 sensors)
+    - Humidity (DHT11 and DHT22 sensors)
    
 All the data are sent to Carriots IoT cloud platform.
 

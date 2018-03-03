@@ -23,4 +23,6 @@ class WeatherStationManager(object):
         print("Temperature = " + str(temperature))
         print("Humidity = " + str(humidity))
 
+        print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
+
         return carriots_response
