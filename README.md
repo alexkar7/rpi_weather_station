@@ -3,8 +3,8 @@ A simple Raspberry PI weather station written in Python. This is the final proje
 
 This basic weather station is able to get next information:
 
-    - Temperature (DHT11 and DHT22 sensors)
-    - Humidity (DHT11 and DHT22 sensors)
+    - Temperature
+    - Humidity
    
 All the data are sent to Carriots IoT cloud platform.
 
@@ -21,6 +21,7 @@ The project is structured into the next modules:
         - Supported physical sensors are:
         
             - DHT11
+            - DHT22
     
     - carriots:
     
@@ -32,16 +33,20 @@ The project is structured into the next modules:
     | NAME                        DATA TYPE |
     -----------------------------------------
     | DHT11_GPIO_PIN              INTEGER   |
+    | DHT22_GPIO_PIN              INTEGER   |
     | CARRIOTS_API_URL            STRING    |
     | CARRIOTS_API_KEY            STRING    |
     | CARRIOTS_API_DEVICE         STRING    |
     -----------------------------------------
 
 # How to use
+
+    NOTE: Ensure you have connected DHT11 and DHT22 sensors correctly
     
     1). Set environment variables:
    
         export DHT11_GPIO_PIN=...
+        export DHT22_GPIO_PIN=...
         export CARRIOTS_API_URL=...
         export CARRIOTS_API_KEY=...
         export CARRIOTS_API_DEVICE=...
@@ -58,6 +63,7 @@ The project is structured into the next modules:
     
         # Environment variables
         export DHT11_GPIO_PIN=...
+        export DHT22_GPIO_PIN=...
         export CARRIOTS_API_URL=...
         export CARRIOTS_API_KEY=...
         export CARRIOTS_API_DEVICE=...
