@@ -78,7 +78,7 @@ The project is structured into the next modules:
    
 # Dependencies
 
-    # Adafruit Python DHT Sensor Library
+    # Adafruit DHT Sensor Library
     
         - URL = https://github.com/adafruit/Adafruit_Python_DHT
     
