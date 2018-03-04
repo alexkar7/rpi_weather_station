@@ -4,7 +4,6 @@ CarriotsDataUploader class sends weather station data to Carriots IoT platform v
 
 # *** IMPORTS *** #
 import os
-import http.client
 import urllib.request
 import urllib.parse
 import json
